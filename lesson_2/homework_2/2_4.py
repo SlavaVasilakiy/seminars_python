@@ -3,7 +3,7 @@
 # Position two: 3
 # Number of elements: 5
 # -> [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5]
-num = int(input('input number of elemts: '))
+num = int(input('input number of elements: '))
 a = []
 for i in range(-num, num + 1):
     a.append(i)
