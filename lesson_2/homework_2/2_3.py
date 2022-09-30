@@ -3,7 +3,7 @@
 
 n = int(input('input a number: '))
 a = [round((1 + 1 / x) ** x) for x in range(1, n + 1)]
-sum = 0
+s = 0
 for i in a:
-    sum = sum + i
-print(f'{a} sum = {sum}')
+    s = s + i
+print(f'{a} sum = {s}')
