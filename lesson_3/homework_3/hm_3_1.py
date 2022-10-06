@@ -36,6 +36,6 @@ def sum_of_numbers(rand_numbs: list):
         list_sum += rand_numbs[i]
     return list_sum
 
-my_list = list_rand_nums(int(input('Input list range: ')))
-print(my_list)
+
+# my_list = list_rand_nums(int(input('Input list range: ')))
 print(sum_of_numbers(my_list))
