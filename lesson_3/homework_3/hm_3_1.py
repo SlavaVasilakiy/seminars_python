@@ -12,17 +12,23 @@
 # out
 # [4, 2, 4, 9]
 # 8
-from random import randint
+from random import sample
 
-n = int(input('Input list range: '))
-my_list = [randint(1, 10) for i in range(n)]
-print(my_list)
 
-def SumOfNumbers(my_list):
+def list_rand_nums(count: int):
+    if count < 0:
+        print("Negative value of list range!")
+        return []
+
+    rand_numbs = sample(range(1, count * 2), count)
+    return rand_numbs
+
+def sum_of_numbers(rand_numbs: list):
     list_sum = 0
-    for i in range(0, len(my_list), 2):
-        list_sum = list_sum + my_list[i]
+    for i in range(0, len(rand_numbs), 2):
+        list_sum += rand_numbs[i]
     return list_sum
 
-print(SumOfNumbers(my_list))
-
+my_list = list_rand_nums(int(input('Input list range: ')))
+print(my_list)
+print(sum_of_numbers(my_list))
