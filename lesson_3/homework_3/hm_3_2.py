@@ -20,6 +20,16 @@ n = int(input('Input list range: '))
 my_list = [randint(1, 10) for i in range(n)]
 print(my_list)
 
+# from random import sample
+
+
+# def list_rand_nums(count: int):
+#     if count < 0:
+#         print("Negative value of list range!")
+#         return []
+
+#     rand_numbs = sample(range(1, count * 2), count)
+#     return rand_numbs
 
 def prod_pairs(my_list: list):
     res_list = []
