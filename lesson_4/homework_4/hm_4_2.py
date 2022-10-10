@@ -12,6 +12,4 @@ def find_prime_nums(num):
             di += 1
     return pr_fact
 
-
-# 650, 9990, 364, 54
 print(find_prime_nums(int(input())))

@@ -3,7 +3,6 @@
 
 from random import randrange
 
-
 def list_rand_nums(count: int):
     if count < 0:
         print("Negative value of the number of numbers!")
@@ -14,7 +13,6 @@ def list_rand_nums(count: int):
         list_nums.append(randrange(count))
 
     return list_nums
-
 
 def uniq_el(list_nums: list):
     result = []
@@ -28,7 +26,6 @@ def uniq_el(list_nums: list):
             result.append(k)
 
     return result
-
 
 all_list = list_rand_nums(int(input("Number of numbers: ")))
 print(all_list)
