@@ -1,0 +1,6 @@
+2x ** 2 + 4x + 5
+There are no roots.
+6x ** 2 + 7x + 8
+There are no roots.
+9x ** 2 + 0x + 3
+There are no roots.
