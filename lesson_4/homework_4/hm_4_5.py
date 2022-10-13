@@ -1,7 +1,7 @@
 # 5. ** Даны два файла, в каждом из которых находится запись многочленов.
 #       Задача - сформировать файл, содержащий сумму многочленов.
 
-from random import choice
+# from random import choice
 
 
 # def poly_sum(name_1: str, name_2: str):
