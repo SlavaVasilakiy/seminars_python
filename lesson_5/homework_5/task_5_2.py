@@ -1,28 +1,5 @@
 # 2. Реализуйте RLE алгоритм: реализуйте модуль сжатия и восстановления данных.
-# Входные и выходные данные хранятся в отдельных текстовых файлах.
-# Алгоритм RLE
-#
-# in
-# Enter the name of the file with the text:
-# 'text_words.txt'
-# Enter the file name to record:
-# 'text_code_words.txt'
-# Enter the name of the file to decode:
-# 'text_code_words.txt'
-#
-# out
-# aaaaavvvvvvvvvvvvvvvvvvvvvvvvvvvvvssssDDDdddFFggggOOiiiaa
-# vvvvvvvvvvvbbwwPPuuuTTYyWWQQ
-#
-# out in file
-# 'text_words.txt'
-# aaaaavvvvvvvvvvvvvvvvvvvvvvvvvvvvvssssDDDdddFFggggOOiiiaa
-# vbbwwPPuuuTTYyWWQQ
-#
-# 'text_code_words.txt'
-# 5a29v4s3D3d2F4g2O3i2a1
-# 1v2b2w2P3u2T1Y1y2W2Q
-
+#    Входные и выходные данные хранятся в отдельных текстовых файлах.
 
 from itertools import groupby, starmap
 from os import path
@@ -54,6 +31,15 @@ def rle_decode(name):
     else:
         print("The files do not exist in the system!")
 
+# def rle_decode(name):
+#     if path.exists(name):
+#         with open(name) as my_f:
+#             for i in my_f:
+#                 word_nums = ["".join(g) for k, g in groupby(i.strip(), key=str.isdigit)]
+#                 print("".join([f"{int(word_nums[i]) * word_nums[i + 1]}" for i in range(0, len(word_nums), 2)]))
+#     else:
+#         print("The files do not exist in the system!")
 
+# aaaaavvvvvvvvvvvvvvvvvvvvvvvvvvvvvssssDDDdddFFggggOOiiiaa
 rle_encode(input("Enter the name of the file with the text: "), input("Enter the file name to record: "))
 rle_decode(input("Enter the name of the file to decode: "))
